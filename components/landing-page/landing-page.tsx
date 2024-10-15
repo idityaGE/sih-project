@@ -112,7 +112,7 @@ export default function LandingPage() {
               ].map((testimonial, index) => (
                 <Card key={index}>
                   <CardContent className="pt-6">
-                    <p className="italic mb-4">"{testimonial.quote}"</p>
+                    <p className="italic mb-4">&ldquo{testimonial.quote}&ldquo</p>
                     <div className="font-semibold">{testimonial.name}</div>
                     <div className="text-sm text-gray-600">{testimonial.role}</div>
                   </CardContent>

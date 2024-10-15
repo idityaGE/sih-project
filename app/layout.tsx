@@ -8,6 +8,7 @@ const font = Open_Sans({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "SIH Project",
   description: "A platform for departments to manage their projects",
+  icons: ""
 };
 
 export default function RootLayout({
@@ -16,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${font.className} antialiased`}
       >
